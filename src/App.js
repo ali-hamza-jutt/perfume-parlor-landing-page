@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Carousel from './components/Carousel';
+import CardsList from './components/CardsList';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar/>
       <main className='main'>
         <Carousel/>
+        <CardsList/>
       </main>
     </div>
   );

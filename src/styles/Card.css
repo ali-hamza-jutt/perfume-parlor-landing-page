@@ -1,0 +1,82 @@
+.collection-card {
+    position: relative;
+    width: 20%;
+    height: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid #ccc;
+    transform-origin: top;
+    transition: transform 0.5s ease-in-out;
+    z-index: 1; /* Default z-index */
+    background-color: #ffffff;
+}
+
+.collection-card:hover {
+    transform:scaleY(1.2) ;
+    z-index: 10; /* Higher z-index on hover */
+}
+.collection-first-image {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.collection-card-content {
+    padding: 0; /* Remove padding from all cards */
+}
+
+.collection-card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.collection-card-price {
+    font-family: 'Ubuntu',serif;
+    color: red;
+    font-size: 16px;
+}
+
+.collection-card-second-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 1.5s ease-in-out; /* Smooth transition for opacity and scaling */
+}
+
+.collection-card:hover .collection-card-second-image {
+    top: 10%;
+    opacity: 1;
+    transform: scaleY(1.02); /* Scale up the second image on hover */
+}
+.collection-card:hover .collection-card-first-image {
+    opacity: 0;
+}
+
+.collection-card-cart-icon {
+    position: absolute;
+    top: 5%;
+    right: -40px; /* Initially hidden on the right */
+    background-color: white;
+    padding: 10px;
+    transition: opacity 0.7s ease-in-out,right 0.5s ease-in-out; /* Smooth transition for the icon movement */
+    z-index: 3; /* Ensure the cart icon is above other elements */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+}
+
+.collection-card:hover .collection-card-cart-icon {
+    right: 10px; /* Show the icon on hover */
+    opacity: 1;
+}
+
+.collection-card-cart-icon .MuiSvgIcon-root {
+    font-size: 24px; /* Adjust icon size if needed */
+}
+.collection-card-cart-icon:hover{
+    color: red;
+}

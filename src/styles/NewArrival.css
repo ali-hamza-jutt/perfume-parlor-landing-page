@@ -95,6 +95,7 @@
 }
 
 .product-card .price {
+    font-family: 'Ubuntu',serif;
     color: red;
     font-weight: bold;
     margin: 0 10px 10px 10px;

@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Carousel from './components/Carousel';
-import CardsList from './components/CardsList';
+import MensCollection from './components/MensCollection';
 import NewArrival from './components/NewArrival';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <main className='main'>
         <Carousel/>
         <NewArrival/>
-        <CardsList/>
+        {<MensCollection/>}
       </main>
     </div>
   );

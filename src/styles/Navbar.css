@@ -96,82 +96,8 @@
     cursor: pointer;
   }
   
-  @media (max-width: 768px) {
-    .navbar-search {
-      display: none;
-    }
-  
-    .navbar-icons {
-      display: none;
-    }
-  
-    .navbar-hamburger {
-      display: block;
-    }
-  }
-  
-  .sidebar {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 250px;
-    height: 100%;
-    background-color: black;
-    transition: right 0.3s ease;
-    z-index: 20;
-    padding-top: 20px;
-  }
-  
-  .sidebar.open {
-    right: 0;
-  }
-  
-  .sidebar-header {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px 20px;
-  }
-  
-  .close-icon {
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .sidebar-menu {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-    color: white;
-  }
-  
-  .sidebar-menu li {
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .sidebar-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 15;
-    pointer-events: none;
-  }
-  
-  .sidebar-overlay.open {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  
 
-
-
-
+/************** Custom Select Component Style *************/
 
   .custom-select-container {
     position: relative;

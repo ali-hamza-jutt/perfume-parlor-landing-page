@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/Card.css'
+import '../styles/CollectionsCard.css'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
-const Card = ({ image1,image2, title, price }) => {
+const CollectionsCard = ({ image1,image2, title, price }) => {
     return (
         <div className='collection-card'>
             <img src={image1} alt={title} className='collection-card-first-image' />
@@ -21,7 +21,7 @@ const Card = ({ image1,image2, title, price }) => {
 
 
 
-export default Card;
+export default CollectionsCard;
 
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card'; // Ensure this path matches your project structure
+import CollectionsCard from './CollectionsCard'; // Ensure this path matches your project structure
 import '../styles/MensCollection.css';
 import mensCollection from '../assets/mensCollection.jpg';
 import mensCollectionData from '../data/mensCollectionData';
@@ -18,7 +18,7 @@ const MensCollection = () => {
             </div>
         <div className='product-list'>
             {mensCollectionData.map((product, index) => (
-                <Card 
+                <CollectionsCard 
                     key={index} 
                     image1={product.image1} 
                     image2={product.image2} 

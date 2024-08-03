@@ -1,4 +1,5 @@
 .collection-card {
+    cursor: pointer;
     position: relative;
     width: 20%;
     height: 350px;

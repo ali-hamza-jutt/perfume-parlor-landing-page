@@ -4,6 +4,7 @@ import Carousel from './components/Carousel';
 import NewArrival from './components/NewArrival';
 import ProductShowcase from './components/ProjectShowcase';
 import MensCollection from './components/MensCollection';
+import WomensCollection from './components/WomensCollection';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <ProductShowcase/>
         <NewArrival/>
         {<MensCollection/>}
+        {<WomensCollection/>}
+
       </main>
     </div>
   );

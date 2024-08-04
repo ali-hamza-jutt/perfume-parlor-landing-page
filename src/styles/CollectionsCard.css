@@ -8,10 +8,15 @@
     flex-direction: column;
     justify-content: space-evenly;
     border: 1px solid #ccc;
-    transform-origin: top;
     transition: transform 0.5s ease-in-out;
     z-index: 1; /* Default z-index */
     background-color: #ffffff;
+}
+.top-collection-cards{
+    transform-origin: top;
+}
+.bottom-collection-cards{
+    transform-origin: bottom;
 }
 
 .collection-card:hover {

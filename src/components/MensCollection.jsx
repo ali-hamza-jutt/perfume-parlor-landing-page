@@ -4,8 +4,6 @@ import '../styles/MensCollection.css';
 import mensCollection from '../assets/mensCollection.jpg';
 import mensCollectionData from '../data/mensCollectionData';
 
-
-
 const MensCollection = () => {
     return (
         <div className="collections-container">
@@ -16,17 +14,21 @@ const MensCollection = () => {
             <div className="collections-image-container">
                 <img className='collections-image' src={mensCollection} alt="Mens Collection" />
             </div>
-        <div className='product-list'>
-            {mensCollectionData.map((product, index) => (
-                <CollectionsCard 
-                    key={index} 
-                    image1={product.image1} 
-                    image2={product.image2} 
-                    title={product.title} 
-                    price={product.price} 
-                />
-            ))}
-        </div>
+            <div className='collections-list'>
+                {mensCollectionData.map((product, index) => {
+                    const itemClass = index < 5 ? 'top-collection-cards' : 'bottom-collection-cards';
+                    return (
+                        <CollectionsCard 
+                            key={index} 
+                            image1={product.image1} 
+                            image2={product.image2} 
+                            title={product.title} 
+                            price={product.price} 
+                            itemClass={itemClass} // Pass the class as a prop
+                        />
+                    );
+                })}
+            </div>
         </div>
     );
 }

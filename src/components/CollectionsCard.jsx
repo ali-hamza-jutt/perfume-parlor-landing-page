@@ -2,9 +2,9 @@ import React from 'react';
 import '../styles/CollectionsCard.css'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
-const CollectionsCard = ({ image1,image2, title, price }) => {
+const CollectionsCard = ({ image1,image2, title, price,itemClass }) => {
     return (
-        <div className='collection-card'>
+        <div className={`collection-card ${itemClass}`}>
             <img src={image1} alt={title} className='collection-card-first-image' />
             <img src={image2} alt={`${title} - Hover`} className="collection-card-second-image" />
 

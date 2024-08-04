@@ -1,7 +1,7 @@
 .new-arrival {
     margin: 2rem 0;
     text-align: center;
-    height: 75vh;
+    height: 65vh;
 }
 .new-arrival-header{
     height: 30%;
@@ -64,7 +64,7 @@
     opacity: 0.8;
 }
 
-.product-grid {
+.new-arrival-product-grid {
     height: 70%;
     display: flex;
     justify-content: space-around;

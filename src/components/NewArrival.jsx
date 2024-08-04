@@ -25,7 +25,7 @@ const NewArrival = () => {
                     <button className="filter-button-red">FILTER</button>
                 </div>
             </div>
-            <div className="product-grid">
+            <div className="new-arrival-product-grid">
                 {products.map((product, index) => (
                     <div key={index} className="product-card">
                      <img src={product.image1} alt={product.name} className="first-image" />

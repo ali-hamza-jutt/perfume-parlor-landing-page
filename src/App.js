@@ -5,6 +5,7 @@ import NewArrival from './components/NewArrival';
 import ProductShowcase from './components/ProjectShowcase';
 import MensCollection from './components/MensCollection';
 import WomensCollection from './components/WomensCollection';
+import CategoryProducts from './components/CategoryProducts';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Carousel/>
         <ProductShowcase/>
         <NewArrival/>
+        <CategoryProducts/>
         {<MensCollection/>}
         {<WomensCollection/>}
 

@@ -1,0 +1,174 @@
+.product-showcase {
+    display: flex;
+    margin: 2rem 0;
+    gap: 20px;
+}
+
+.main-product-container, .product-grid-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.main-product-container{
+    justify-content: space-between;
+}
+.product-grid-container{
+    flex: 2;
+}
+.main-product {
+    border: 3px solid red;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.main-product h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main-product-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0;
+}
+.main-product-description{
+
+    margin: 2rem 3rem;
+
+}
+.new-price {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.product-grid {
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.grid-item {
+    flex: 33.33%;
+    border: 1px solid #ccc;
+    text-align: center;
+    
+    transition: transform 0.5s ease-in-out;
+    background-color: #ffffff;
+    z-index: 1;
+}
+.top-grid-item{
+    transform-origin: top;
+}
+.bottom-grid-item{
+    transform-origin: bottom;
+}
+.grid-item:hover {
+    transform: scaleY(1.2);
+    z-index: 10; 
+}
+
+.grid-first-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.grid-second-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 1.5s ease-in-out; 
+}
+
+.grid-item:hover .grid-second-image {
+    top: 10%;
+    opacity: 1;
+    transform: scaleY(1.02); 
+}
+
+.grid-item:hover .grid-first-image {
+    opacity: 0;
+}
+
+.grid-item h6 {
+    margin: 1rem 0.5rem;
+}
+
+.label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.sold-out {
+    background: black;
+}
+
+.sale {
+    background: red;
+}
+
+
+.grid-cart-icon {
+    position: absolute;
+    top: 5%;
+    right: -40px; 
+    background-color: white;
+    padding: 10px;
+    transition: opacity 0.7s ease-in-out, right 0.5s ease-in-out; 
+    z-index: 3; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+}
+
+.grid-item:hover .grid-cart-icon {
+    right: 10px; 
+    opacity: 1;
+}
+
+.grid-cart-icon .MuiSvgIcon-root {
+    font-size: 24px; 
+}
+
+.grid-cart-icon:hover {
+    color: red;
+}
+
+.grid-wishlist-icon {
+    position: absolute;
+    top: 5%;
+    left: -40px; 
+    background-color: white;
+    padding: 10px;
+    transition: opacity 0.7s ease-in-out, left 0.5s ease-in-out; 
+    z-index: 3; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+}
+
+.grid-item:hover .grid-wishlist-icon {
+    left: 10px; 
+    opacity: 1;
+}
+
+.grid-wishlist-icon .MuiSvgIcon-root {
+    font-size: 24px; 
+}
+
+.grid-wishlist-icon:hover {
+    color: red;
+}

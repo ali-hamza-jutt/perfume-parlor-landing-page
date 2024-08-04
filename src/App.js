@@ -1,8 +1,9 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Carousel from './components/Carousel';
-import MensCollection from './components/MensCollection';
 import NewArrival from './components/NewArrival';
+import ProductShowcase from './components/ProjectShowcase';
+import MensCollection from './components/MensCollection';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar/>
       <main className='main'>
         <Carousel/>
+        <ProductShowcase/>
         <NewArrival/>
         {<MensCollection/>}
       </main>

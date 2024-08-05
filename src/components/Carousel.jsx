@@ -23,7 +23,7 @@ const Carousel = () => {
             `}</style>
             <CCarousel controls transition="crossfade" className="custom-carousel">
                 <CCarouselItem>
-                    <CImage className="d-block w-100 custom-carousel" src={carousel1} alt="slide 1" />
+                    <CImage className="d-block w-100 custom-carousel" src={carousel4} alt="slide 1" />
                 </CCarouselItem>
                 <CCarouselItem>
                     <CImage className="d-block w-100 custom-carousel" src={carousel2} alt="slide 2" />
@@ -32,7 +32,7 @@ const Carousel = () => {
                     <CImage className="d-block w-100 custom-carousel" src={carousel3} alt="slide 3" />
                 </CCarouselItem>
                 <CCarouselItem>
-                    <CImage className="d-block w-100 custom-carousel" src={carousel4} alt="slide 3" />
+                    <CImage className="d-block w-100 custom-carousel" src={carousel1} alt="slide 3" />
                 </CCarouselItem>
             </CCarousel>
         </>

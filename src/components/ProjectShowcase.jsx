@@ -49,9 +49,9 @@ const ProductGrid = ({ products }) => {
                             <img src={product.image2} alt={product.title} className="grid-second-image" />
                             <h6>{product.title}</h6>
                             <p className="new-price">{product.price}</p>
-                            {/* <div className="grid-cart-icon">
+                            <div className="grid-cart-icon">
                                 <ShoppingCartOutlinedIcon />
-                            </div> */}
+                            </div>
                             <div className="grid-wishlist-icon">
                                 <FavoriteBorderIcon />
                             </div>

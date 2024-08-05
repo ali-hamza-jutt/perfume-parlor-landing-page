@@ -86,3 +86,10 @@
 .collection-card-cart-icon:hover{
     color: red;
 }
+
+@media (max-width:768px)
+{
+    .collection-card{
+        width: 50%;
+    }
+}

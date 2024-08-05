@@ -36,3 +36,16 @@
 .collections-image:hover{
     transform: scale(1.1);
 }
+
+@media (max-width: 768px)
+{
+    .collections-header{
+        margin: 0;
+    }
+    .collections-image-container{
+        height: 20vh;
+    }
+    .collections-header p,.collections-header h2{
+        padding: 0.5rem;
+    }
+}

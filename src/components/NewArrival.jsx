@@ -1,6 +1,7 @@
 import React from 'react';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import '../styles/NewArrival.css';
+import RangeSelector from './RangeSelector';
 import useScreenSize from '../hooks/useScreenSize';
 
 const products = [
@@ -25,7 +26,8 @@ const NewArrival = () => {
                     <p>Perfume Hut Stocks more than 2,000 collections of Men’s and Women’s Perfume and Fragrance. If you are looking to buy the Best Perfume Online, then Perfume Hut is the best place for buying Perfumes, Deodorants, Attars, Arabic Perfumes, Italian Perfumes, French Designer Perfumes.</p>
                 </div>
                 <div className="filter-section">
-                    <button className="filter-button">FILTER PRICE</button>
+                    <RangeSelector/>
+                    {/* <button className="filter-button">FILTER PRICE</button> */}
                     <button className="filter-button-red">FILTER</button>
                 </div>
             </div>

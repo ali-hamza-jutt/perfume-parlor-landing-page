@@ -19,6 +19,7 @@ const MensCollection = () => {
             <div className='collections-list'>
                 {mensCollectionData.map((product, index) => {
                     const targetedIndex=isMobile?2:5;
+                    console.log(targetedIndex)
                     const itemClass = index < targetedIndex ? 'top-collection-cards' : 'bottom-collection-cards';
                     return (
                         <CollectionsCard 

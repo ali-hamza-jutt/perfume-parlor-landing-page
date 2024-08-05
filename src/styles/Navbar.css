@@ -9,6 +9,7 @@
 }
 
 .navbar-logo {
+  margin-left: 0.5rem;
   font-size: 48px;
   font-weight: bold;
 }
@@ -49,6 +50,7 @@
 .navbar-icons {
   display: flex;
   align-items: center;
+  margin-right: 0.5rem;
   
 }
 

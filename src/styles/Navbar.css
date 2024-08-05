@@ -1,184 +1,203 @@
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: black;
-    padding: 10px 20px;
-    position: relative;
-    z-index: 10;
-  }
-  
-  .navbar-logo {
-    font-size: 48px;
-    font-weight: bold;
-  }
-  
-  .logo-red {
-    color: red;
-  }
-  
-  .logo-white {
-    color: white;
-  }
-  
-  .navbar-search {
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-input {
-    padding: 1rem;
-    border: none;
-    width: 300px;
-    font-size: 16px;
-  }
-  .search-input:focus{
-    outline: none;
-  }
-  
-
-  
-  .search-button {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 1rem;
-    cursor: pointer;
-  }
-  
-  .navbar-icons {
-    display: flex;
-    align-items: center;
-    
-  }
-  
-  .navbar-icon {
-    margin-left: 20px;
-    color: white;
-    position: relative;
-    font-size: 18px
-  }
-  .login-button a{
-    margin-left: 20px;
-    color: white;
-    position: relative;
-    color: #ffffff;
-    text-decoration: none; 
-    font-size: 18px;
-    margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 10;
 }
+
+.navbar-logo {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.logo-red {
+  color: red;
+}
+
+.logo-white {
+  color: white;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 1rem;
+  border: none;
+  width: 300px;
+  font-size: 16px;
+}
+.search-input:focus{
+  outline: none;
+}
+
+
+
+.search-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
   
-  .icon-badge{
-    position: absolute;
-    top: -5px; 
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    padding: 2px 5px;
-    font-size: 12px;
-    cursor: pointer;
-  }
-  .icon-badge-heart{
-    right: -10px;
-  }
-  .icon-badge-cart{
-    right: 52.5px;
-  }
-  
-  .cart-amount {
-    margin-left: 10px;
-  }
-  
-  .navbar-hamburger {
-    display: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
+}
+
+.navbar-icon {
+  margin-left: 20px;
+  color: white;
+  position: relative;
+  font-size: 18px
+}
+.login-button a{
+  margin-left: 20px;
+  color: white;
+  position: relative;
+  color: #ffffff;
+  text-decoration: none; 
+  font-size: 18px;
+  margin-right: 1rem;
+}
+
+.icon-badge{
+  position: absolute;
+  top: -5px; 
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.icon-badge-heart{
+  right: -10px;
+}
+.icon-badge-cart{
+  right: 52.5px;
+}
+
+.cart-amount {
+  margin-left: 10px;
+}
+
+.navbar-hamburger {
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 
 /************** Custom Select Component Style *************/
 
-  .custom-select-container {
-    position: relative;
-    width: 200px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .custom-select-header {
-    padding: 1rem;
-    background-color: #ffffff;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 500;
-    color: rgb(107, 106, 106);
-
-  }
-  
-  .custom-select-header .arrow {
-    border: solid black;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 3px;
-    transition: transform 0.3s;
-  }
-  
-  .custom-select-header .arrow.open {
-    transform: rotate(-135deg);
-  }
-  
-  .custom-select-header .arrow {
-    transform: rotate(45deg);
-  }
-  
-  .custom-select-options {
-    position: absolute;
-    width: 100%;
-    border-top: none;
-    background-color: #ffffff;
-    max-height: 200px;
-    overflow-y: auto;
-    z-index: 1;
-  }
-  
-  .custom-select-option {
-    padding: 10px;
-    cursor: pointer;
-    background-color: #f9f9f9;
-    color: rgb(107, 106, 106);
-  }
-  
-  .custom-select-option:hover {
-    background-color: #e9e9e9;
-  }
-.menu-icon-container,.magnifying-icon-container{
-  display: none;
+.custom-select-container {
+  position: relative;
+  width: 200px;
+  font-family: Arial, sans-serif;
 }
-  
+
+.custom-select-header {
+  padding: 1rem;
+  background-color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  color: rgb(107, 106, 106);
+
+}
+
+.custom-select-header .arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transition: transform 0.3s;
+}
+
+.custom-select-header .arrow.open {
+  transform: rotate(-135deg);
+}
+
+.custom-select-header .arrow {
+  transform: rotate(45deg);
+}
+
+.custom-select-options {
+  position: absolute;
+  width: 100%;
+  border-top: none;
+  background-color: #ffffff;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.custom-select-option {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  color: rgb(107, 106, 106);
+}
+
+.custom-select-option:hover {
+  background-color: #e9e9e9;
+}
+.menu-icon-container,.magnifying-icon-container{
+display: none;
+}
 
 
-  @media(max-width:768px)
-  {
-    .navbar-logo {
-      font-size: 36px;
-      font-weight: bold;
-    }
-    .navbar-search,.navbar-icons{
-      display: none;
-    }
-    .menu-icon-container,.magnifying-icon-container{
-      display: block;
-      color: #ffffff;
-      font-size: 22px;
-      cursor: pointer;
-    }
-    .menu-icon-container{
-      margin-left: 0.5rem;
-    }
-    .magnifying-icon-container{
-      margin-right: 0.5rem;
-    }
 
+@media(max-width:768px)
+{
+  .navbar-logo {
+    font-size: 36px;
+    font-weight: bold;
   }
+  .navbar-search,.navbar-icons{
+    display: none;
+  }
+  .menu-icon-container,.magnifying-icon-container{
+    display: block;
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .menu-icon-container{
+    margin-left: 0.5rem;
+  }
+  .magnifying-icon-container{
+    margin-right: 0.5rem;
+  }
+
+}
+
+
+
+
+/* .sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  min-height: 100vh;
+  background-color: black;
+  transition: right 0.3s ease;
+  z-index: 20;
+  padding-top: 20px;
+}
+
+.sidebar.open {
+  right: 0;
+} */

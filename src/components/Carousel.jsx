@@ -16,6 +16,10 @@ const Carousel = () => {
                     max-height: 70vh;
                     margin: 0; /* Remove any default margin */
                 }
+                    @media (max-width: 768px) {
+                    .custom-carousel, .custom-carousel img {
+                    height: 20vh;
+          }
             `}</style>
             <CCarousel controls transition="crossfade" className="custom-carousel">
                 <CCarouselItem>

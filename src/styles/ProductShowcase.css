@@ -172,3 +172,12 @@
 .grid-wishlist-icon:hover {
     color: red;
 }
+
+@media (max-width: 768px) {
+    .product-showcase{
+        flex-direction: column;
+    }
+    .main-product-description{
+        margin: 1rem;
+    }
+}

@@ -12,11 +12,14 @@
     justify-content: space-between;
     width: 80%;
     max-width: 1200px;
+    flex-wrap: wrap;
 }
 
 .footer-section {
     flex: 1;
     margin: 0 1rem;
+    min-width: 200px;
+    text-align: center;
 }
 
 .footer-section h4 {
@@ -24,7 +27,6 @@
 }
 
 .footer-section ul {
-    cursor: pointer;
     list-style: none;
     padding: 0;
 }
@@ -45,6 +47,7 @@
 
 .social-icons {
     display: flex;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -68,4 +71,15 @@
 
 .footer-bottom p {
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 1rem 0;
+    }
 }

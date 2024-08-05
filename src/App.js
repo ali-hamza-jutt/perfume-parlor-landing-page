@@ -14,8 +14,8 @@ function App() {
       <Navbar/>
       <main className='main'>
         <Carousel/>
-        <ProductShowcase/>
         <NewArrival/>
+        <ProductShowcase/>
         <CategoryProducts/>
         {<MensCollection/>}
         {<WomensCollection/>}

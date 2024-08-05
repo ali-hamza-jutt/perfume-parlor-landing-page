@@ -1,6 +1,7 @@
 import React from 'react';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import '../styles/NewArrival.css';
+import useScreenSize from '../hooks/useScreenSize';
 
 const products = [
     { name: 'Zimaya Sharaf Blend Perfume 100ml', price: 'Rs8,915.00',image1:'https://perfumehut.com.pk/wp-content/uploads/2024/03/Zimaya-Sharaf-Blend-Perfume-100ml.webp',image2:'https://perfumehut.com.pk/wp-content/uploads/2024/03/Zimaya-Sharaf-Blend-Perfume-100ml-1.webp' },
@@ -13,6 +14,9 @@ const products = [
 ];
 
 const NewArrival = () => {
+    const { isMobile } = useScreenSize();
+    const displayedProducts = isMobile ? products.slice(0, 2) : products;
+
     return (
         <div className="new-arrival">
             <div className="new-arrival-header">
@@ -26,10 +30,9 @@ const NewArrival = () => {
                 </div>
             </div>
             <div className="new-arrival-product-grid">
-                {products.map((product, index) => (
+                {displayedProducts.map((product, index) => (
                     <div key={index} className="product-card">
-                     <img src={product.image1} alt={product.name} className="first-image" />
-
+                        <img src={product.image1} alt={product.name} className="first-image" />
                         <img src={product.image2} alt={`${product.name} - Hover`} className="second-image" />
                         <div className="cart-icon">
                             <ShoppingCartOutlinedIcon />

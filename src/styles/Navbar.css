@@ -1,3 +1,4 @@
+
 .navbar {
   display: flex;
   align-items: center;
@@ -9,7 +10,7 @@
 }
 
 .navbar-logo {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   font-size: 48px;
   font-weight: bold;
 }
@@ -50,7 +51,7 @@
 .navbar-icons {
   display: flex;
   align-items: center;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
   
 }
 
@@ -58,7 +59,8 @@
   margin-left: 20px;
   color: white;
   position: relative;
-  font-size: 18px
+  font-size: 18px;
+  cursor: pointer;
 }
 .login-button a{
   margin-left: 20px;

@@ -3,6 +3,7 @@ import specialProducts from '../data/specialProducts';
 import '../styles/ProductShowcase.css';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import useScreenSize from '../hooks/useScreenSize.js'
 
 
 
@@ -32,14 +33,16 @@ const MainProduct = () => {
 }
 
 const ProductGrid = ({ products }) => {
-    // const displayedProducts=isMobile?products.slice(0,2):products;
+    
+            const {isMobile}=useScreenSize();
     return (
         <div className="product-grid-container">
             <h2>Perfume Parlor Special</h2>
             <div className="product-grid">
                 {products.map((product, index) => {
                     // Determine the class based on the index
-                    const itemClass = index < 3 ? 'top-grid-item' : 'bottom-grid-item';
+                    const targetedIndex=isMobile?2:3;
+                    const itemClass = index < targetedIndex ? 'top-grid-item' : 'bottom-grid-item';
 
                     return (
                         <div key={index} className={`grid-item ${itemClass}`}>

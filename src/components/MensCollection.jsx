@@ -3,8 +3,10 @@ import CollectionsCard from './CollectionsCard'; // Ensure this path matches you
 import '../styles/MensCollection.css';
 import mensCollection from '../assets/mensCollection.jpg';
 import mensCollectionData from '../data/mensCollectionData';
+import useScreenSize from '../hooks/useScreenSize.js';
 
 const MensCollection = () => {
+    const {isMobile}=useScreenSize();
     return (
         <div className="collections-container">
             <div className="collections-header">
@@ -16,7 +18,8 @@ const MensCollection = () => {
             </div>
             <div className='collections-list'>
                 {mensCollectionData.map((product, index) => {
-                    const itemClass = index < 5 ? 'top-collection-cards' : 'bottom-collection-cards';
+                    const targetedIndex=isMobile?2:5;
+                    const itemClass = index < targetedIndex ? 'top-collection-cards' : 'bottom-collection-cards';
                     return (
                         <CollectionsCard 
                             key={index} 

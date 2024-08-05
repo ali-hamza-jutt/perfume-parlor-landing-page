@@ -1,7 +1,6 @@
 import React from 'react';
 import specialProducts from '../data/specialProducts';
 import '../styles/ProductShowcase.css';
-import useScreenSize from '../hooks/useScreenSize';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
@@ -33,13 +32,12 @@ const MainProduct = () => {
 }
 
 const ProductGrid = ({ products }) => {
-    const {isMobile}=useScreenSize();
-    const displayedProducts=isMobile?products.slice(0,2):products;
+    // const displayedProducts=isMobile?products.slice(0,2):products;
     return (
         <div className="product-grid-container">
             <h2>Perfume Parlor Special</h2>
             <div className="product-grid">
-                {displayedProducts.map((product, index) => {
+                {products.map((product, index) => {
                     // Determine the class based on the index
                     const itemClass = index < 3 ? 'top-grid-item' : 'bottom-grid-item';
 

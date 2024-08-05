@@ -180,4 +180,7 @@
     .main-product-description{
         margin: 1rem;
     }
+    .grid-item{
+        flex: 50%;
+    }
 }

@@ -7,7 +7,7 @@ import '../styles/Navbar.css';
 
 const Navbar = () => {
 
-  const options = ['ACURA', 'ERMEF', 'EMPER', 'RIFFS'];
+  const options = ['Select Category','ACURA', 'ERMEF', 'EMPER', 'RIFFS'];
 
   return (
     <>

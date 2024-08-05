@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import { FaSearch, FaHeart, FaShoppingBag, FaBars, FaTimes } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';  
+
+import { FaSearch, FaHeart, FaShoppingBag, FaBars, FaTimes} from 'react-icons/fa';
 import CustomSelect from './CustomSelect';
 import '../styles/Navbar.css';
 
@@ -10,6 +13,9 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
+        <div className="menu-icon-container">
+          <FaBars/>
+        </div>
         <div className="navbar-logo">
           <span className="logo-red">Perfume</span><span className="logo-white">Parlor</span>
         </div>
@@ -34,8 +40,10 @@ const Navbar = () => {
             <span className="cart-amount">Rs 0.00</span>
           </div>
         </div>
-
-
+        <div className="magnifying-icon-container">
+          <FaSearch/>
+        {/* <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /> */}
+        </div>
       </nav>
     </>
   );

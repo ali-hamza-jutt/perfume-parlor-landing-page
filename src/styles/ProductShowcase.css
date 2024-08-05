@@ -178,6 +178,7 @@
     }
     .main-product-description{
         margin: 1rem;
+        font-size: 14px;
     }
     .grid-item{
         flex: 50%;

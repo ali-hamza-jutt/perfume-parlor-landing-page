@@ -43,8 +43,6 @@ const ProductGrid = ({ products }) => {
 
                     return (
                         <div key={index} className={`grid-item ${itemClass}`}>
-                            {product.soldOut && <span className="label sold-out">SOLD OUT</span>}
-                            {product.sale && <span className="label sale">SALE</span>}
                             <img src={product.image1} alt={product.title} className="grid-first-image" />
                             <img src={product.image2} alt={product.title} className="grid-second-image" />
                             <h6>{product.title}</h6>

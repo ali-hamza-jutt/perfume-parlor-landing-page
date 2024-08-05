@@ -164,4 +164,7 @@
         width: 60%;
         margin: 0;
     }
+    .new-arrival p {
+        font-size: 14px;
+    }
 }

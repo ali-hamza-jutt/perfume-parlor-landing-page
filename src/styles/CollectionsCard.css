@@ -92,4 +92,8 @@
     .collection-card{
         width: 50%;
     }
+    .collection-card-second-image {
+        height: 50%;
+    }
+    
 }

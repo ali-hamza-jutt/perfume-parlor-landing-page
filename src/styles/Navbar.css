@@ -186,18 +186,3 @@ display: none;
 
 
 
-/* .sidebar {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 250px;
-  min-height: 100vh;
-  background-color: black;
-  transition: right 0.3s ease;
-  z-index: 20;
-  padding-top: 20px;
-}
-
-.sidebar.open {
-  right: 0;
-} */

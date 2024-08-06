@@ -35,7 +35,8 @@ const RangeSelector = () => {
         width: 250,
         textAlign: 'left',
         zIndex: 20,
-        marginBottom: '20px'
+        marginBottom: '20px',
+        marginRight:'20ps'
       }}
     >
       <Typography

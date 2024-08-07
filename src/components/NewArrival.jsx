@@ -26,7 +26,10 @@ const NewArrival = () => {
                     <p>Perfume Hut Stocks more than 2,000 collections of Men’s and Women’s Perfume and Fragrance. If you are looking to buy the Best Perfume Online, then Perfume Hut is the best place for buying Perfumes, Deodorants, Attars, Arabic Perfumes, Italian Perfumes, French Designer Perfumes.</p>
                 </div>
                 <div className="filter-section">
+                    
+                    <div className="filter-button">
                     <RangeSelector/>
+                    </div>
                     {/* <button className="filter-button">FILTER PRICE</button> */}
                     <button className="filter-button-red">FILTER</button>
                 </div>

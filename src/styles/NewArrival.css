@@ -43,13 +43,13 @@
     border: 1px solid #ddd;
     cursor: pointer;
 } */
-.filter-button{
+/* .filter-button{
     width: 100%;
     padding: 0.5rem;
     background-color: #ffffff;
     font-size: 18px;
     border: 1px solid #ccc;
-}
+} */
 
 .filter-button-red {
     padding: 10px 1.5rem;
@@ -168,5 +168,35 @@
     }
     .new-arrival p {
         font-size: 14px;
+    }
+}
+@media (min-width: 769px) and (max-width: 912px) {
+    .new-arrival{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .new-arrival-product-grid{
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .product-card{
+        flex: 1 1 33.33%;
+        max-width: 33.33%;
+        box-sizing: border-box;
+    }
+    .new-arrival-header{
+        flex-direction: column;
+    }
+    .filter-section{
+        
+        width: 100%;
+        flex-direction: column;
+        height: 10vh;
+        justify-content: flex-start;
+    }
+    .filter-button-red{
+        margin-bottom: 1rem;
     }
 }

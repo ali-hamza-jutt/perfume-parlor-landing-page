@@ -19,6 +19,9 @@
   color: red;
 }
 
+
+
+
 .logo-white {
   color: white;
 }
@@ -46,6 +49,9 @@
   border: none;
   padding: 1rem;
   cursor: pointer;
+}
+.search-button:focus{
+  outline:none
 }
 
 .navbar-icons {
@@ -187,6 +193,29 @@ display: none;
 
 }
 
+/* Tablets Styles */
 
+@media (min-width: 769px) and (max-width: 912px) {
+  .search-input{
+    width: 150px;
+    font-size: 13px;
+  }
+.custom-select-container{
+  width: 130px;
+}
+.search-button{
+  font-size: 13px;
+}
+.custom-select-header{
+  font-size: 13px;
+}
+.login-button{
+  display: none;
+}
+.custom-select-header .arrow {
+  border-width: 0 1.5px 1.5px 0;
+
+}
+}
 
 

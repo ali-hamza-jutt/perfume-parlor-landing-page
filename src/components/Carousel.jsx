@@ -10,17 +10,24 @@ import carousel4 from '../assets/carousel4.webp';
 const Carousel = () => {
     return (
         <>
-            <style jsx>{`
-                .custom-carousel, .custom-carousel img {
-                    height: 70vh;
-                    max-height: 70vh;
-                    margin: 0; /* Remove any default margin */
-                }
-                    @media (max-width: 768px) {
-                    .custom-carousel, .custom-carousel img {
-                    height: 20vh;
-          }
-            `}</style>
+           <style jsx>{`
+  .custom-carousel, .custom-carousel img {
+    height: 70vh;
+    max-height: 70vh;
+    margin: 0; /* Remove any default margin */
+  }
+  @media (max-width: 768px) {
+    .custom-carousel, .custom-carousel img {
+      height: 20vh;
+    }
+  }
+  @media (min-width: 769px) and (max-width: 912px) {
+    .custom-carousel, .custom-carousel img {
+      height: 30vh;
+    }
+  }
+`}</style>
+
             <CCarousel controls transition="crossfade" className="custom-carousel">
                 <CCarouselItem>
                     <CImage className="d-block w-100 custom-carousel" src={carousel4} alt="slide 1" />

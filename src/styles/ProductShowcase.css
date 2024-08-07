@@ -184,3 +184,8 @@
         flex: 50%;
     }
 }
+@media (min-width: 769px) and (max-width: 912px) {
+    .product-showcase{
+        flex-direction: column;
+    }
+}

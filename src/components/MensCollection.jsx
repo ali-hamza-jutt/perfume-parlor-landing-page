@@ -5,8 +5,10 @@ import mensCollection from '../assets/mensCollection.jpg';
 import mensCollectionData from '../data/mensCollectionData';
 import useScreenSize from '../hooks/useScreenSize.js';
 
+
 const MensCollection = () => {
     const {isMobile}=useScreenSize();
+   
     return (
         <div className="collections-container">
             <div className="collections-header">
@@ -18,8 +20,8 @@ const MensCollection = () => {
             </div>
             <div className='collections-list'>
                 {mensCollectionData.map((product, index) => {
-                    const targetedIndex=isMobile?2:5;
-                    console.log(targetedIndex)
+                 const targetedIndex = isMobile ? 2 : 5;
+
                     const itemClass = index < targetedIndex ? 'top-collection-cards' : 'bottom-collection-cards';
                     return (
                         <CollectionsCard 
@@ -28,7 +30,7 @@ const MensCollection = () => {
                             image2={product.image2} 
                             title={product.title} 
                             price={product.price} 
-                            itemClass={itemClass} // Pass the class as a prop
+                            itemClass={itemClass} 
                         />
                     );
                 })}

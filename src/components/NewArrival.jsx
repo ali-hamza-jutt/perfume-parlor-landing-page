@@ -3,6 +3,7 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import '../styles/NewArrival.css';
 import RangeSelector from './RangeSelector';
 import useScreenSize from '../hooks/useScreenSize';
+import useTabletScreen from '../hooks/isTabletScreen';
 
 const products = [
     { name: 'Zimaya Sharaf Blend Perfume 100ml', price: 'Rs8,915.00',image1:'https://perfumehut.com.pk/wp-content/uploads/2024/03/Zimaya-Sharaf-Blend-Perfume-100ml.webp',image2:'https://perfumehut.com.pk/wp-content/uploads/2024/03/Zimaya-Sharaf-Blend-Perfume-100ml-1.webp' },
@@ -16,7 +17,9 @@ const products = [
 
 const NewArrival = () => {
     const { isMobile } = useScreenSize();
-    const displayedProducts = isMobile ? products.slice(0, 2) : products;
+    const { isTablet } = useTabletScreen();
+    const displayedProducts = isMobile ?products.slice(0, 2): isTablet ? products.slice(0, 3) : products;
+
 
     return (
         <div className="new-arrival">

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Slider, Box, Typography, IconButton } from '@mui/material';
+import { Slider, Box, Typography, IconButton, useMediaQuery } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
@@ -7,6 +7,9 @@ const RangeSelector = () => {
   const [priceRange, setPriceRange] = useState([0, 15000]);
   const [open, setOpen] = useState(false);
   const containerRef = useRef(null);
+
+  // Use media query to check if the screen width is less than 728px
+  const isMobile = useMediaQuery('(max-width: 728px)');
 
   const handleChange = (event, newValue) => {
     setPriceRange(newValue);
@@ -32,11 +35,11 @@ const RangeSelector = () => {
       ref={containerRef}
       sx={{
         position: 'relative',
-        width: 250,
+        width: isMobile ? 200 : 250, // Adjust width based on screen size
         textAlign: 'left',
         zIndex: 20,
         marginBottom: '20px',
-        marginRight:'20ps'
+        marginRight: '20px'
       }}
     >
       <Typography
@@ -47,13 +50,13 @@ const RangeSelector = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          fontSize: '18px', // Adjusted font size
-          backgroundColor: '#ffffff', // Background color
-          border: '1px solid #ccc', // Border style
-          padding: '10px', // Padding for spacing
-          borderRadius: '4px', // Optional: Rounded corners
-          position: 'relative', // Ensure this container is positioned relative for proper z-index handling
-          zIndex: 21 // Ensure the toggle button stays above other content
+          fontSize: '18px',
+          backgroundColor: '#ffffff',
+          border: '1px solid #ccc',
+          padding: '10px',
+          borderRadius: '4px',
+          position: 'relative',
+          zIndex: 21
         }}
       >
         <Box sx={{ flex: 1 }}>FILTER PRICE</Box>
@@ -77,8 +80,8 @@ const RangeSelector = () => {
           left: 0,
           width: '100%',
           backgroundColor: 'white',
-          padding: '10px', // Padding for the slider container
-          zIndex: 20 // Ensure dropdown stays above other content but below the top bar
+          padding: '10px',
+          zIndex: 20
         }}
       >
         <Slider
